@@ -1,0 +1,14 @@
+CREATE DATABASE IF NOT EXISTS ecommerce_pc
+DEFAULT CHARACTER SET= "utf8mb4";
+use ecommerce_pc;
+
+CREATE TABLE Cliente(
+   id_cliente INT AUTO_INCREMENT PRIMARY KEY,
+   nome VARCHAR(100) NOT NULL,
+   email VARCHAR(100) NOT NULL UNIQUE,
+   senha VARCHAR(100) NOT NULL,
+   endereco TEXT
+   criado_em DEFAULT CURRENT_TIME
+);
+
+INSERT 
